@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪类</title>
+	<style type="text/css">	
+		p{
+			width: 300px;
+			border: 1px solid #000;
+			font:12px/30px "微软雅黑";
+			padding:10px; 
+		}
+		/*使用E:first-line让文本的第一行变色*/
+		p:first-line{
+			background: #ff3300;
+		}
+		p:first-letter{
+			font-size: 30px;
+		}
+		/*设置文本被选择时候的样式,注意此处的冒号有两个，我次奥！*/
+		p::selection{
+			background: #f60;
+		}
+	</style>
+</head>
+<body>
+	<p>CSS3 target伪类是众多实用的CSS3特性中的一个。它用来匹配文档(页面)的URI中某个标志符的目标元素。具体来说，URI中的标志符通常会包含一个”#”字符，然后后面带有一个标志符名称，比如#respond，target就是用来匹配ID为respond的元素的。</p>
+</body>
+</html> 
